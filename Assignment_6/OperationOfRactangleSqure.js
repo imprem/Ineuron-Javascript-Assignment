@@ -11,7 +11,7 @@ Rectangle class. The operations are:
 
 class Rectangle {
     area() {
-        return this.w * this.h;
+        return this.w ** this.h;
     }
 }
 
