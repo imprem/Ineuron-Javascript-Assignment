@@ -36,6 +36,27 @@ class StringOperation{
     convertStringArray(str){
       return [...str];
     }
+
+    // 6. What string method can be used to check the occurrence of a specified text in a string?
+    occurrenceText(str){
+      return str.match('is');
+    }
+
+    //7. How can you break a string to a newline in Javascript
+    addNewLineInString(){
+      let str =  "Hello World!\nThis is my string";
+      console.log(str);
+    }
+
+    // 8 Write a Javascript function to test whether the first character of a string is lowercase.
+    checkCharacterIsLowerCase(str){
+      if(str.charAt(0) == str.charAt(0).toLowerCase()){
+        console.log("YES, it is lower case");
+      }else{
+        console.log("No, it is Upper case");
+      }
+    }
+
 }
 
 const res = new StringOperation();
@@ -44,3 +65,6 @@ console.log(res.removeWhitespaces("Prem cha"));
 console.log(res.replaceFirstWordWithSecondWord("Hi Boy"));
 console.log(res.replaceCharacter("applea"));
 console.log(res.convertStringArray("123a"));
+console.log(res.occurrenceText("This is land is"))
+res.addNewLineInString();
+res.checkCharacterIsLowerCase("Zprem");
